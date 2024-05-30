@@ -1,7 +1,8 @@
 import os
 import shutil
 from datetime import datetime
-from tkinter import messagebox
+import tkinter as tk
+from tkinter import messagebox, simpledialog
 from PyQt5 import QtGui
 from PyQt5.QtCore import QRegExp
 from PyQt5.QtWidgets import (QApplication, QComboBox, QMessageBox)
@@ -284,7 +285,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         workbook.save(file_path)
         print("Data saved to:", file_path)
 
-        win32api.ShellExecute(0, "print", file_path, None, ".", 0)
+        root = tk.Tk()
+        root.withdraw()  # Скрыть основное окно
+
+        num_copies = simpledialog.askinteger("Введите количество копий", "Сколько копий вы хотите напечатать?",
+                                             initialvalue=1)
+
+        root.destroy()  # Закрыть временное окно
+
+        for i in range(num_copies):
+            win32api.ShellExecute(0, "print", file_path, None, ".", 0)
 
         for file in os.listdir(save_dir):
             file_path = os.path.join(save_dir, file)
