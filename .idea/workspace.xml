@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a46d30f1-60fb-4605-ab75-ab39f40843ba" name="Changes" comment="форма для создания накладных на перемещение">
+    <list default="true" id="a46d30f1-60fb-4605-ab75-ab39f40843ba" name="Changes" comment="Добавил ввод кол-ва копиц документа">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Save/57.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,12 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1716704427288</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавил ввод кол-ва копиц документа">
+      <option name="closed" value="true" />
+      <created>1717056904729</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717056904729</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Начало" />
     <MESSAGE value="форма для создания накладных на перемещение" />
-    <option name="LAST_COMMIT_MESSAGE" value="форма для создания накладных на перемещение" />
+    <MESSAGE value="Добавил ввод кол-ва копиц документа" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил ввод кол-ва копиц документа" />
   </component>
 </project>

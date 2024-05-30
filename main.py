@@ -266,7 +266,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         sheet['G3'] = self.CBAgreed.currentText()
         sheet['C5'] = self.CBRecipient.currentText()
         sheet['D7'] = self.CBTransport.currentText()
-        sheet['D35'] = self.CBDriver.currentText()
+        sheet['D38'] = self.CBDriver.currentText()
 
         row = 10
         for i in range(1, 21):
